@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="app">
+
+        <div>
+            <section class="header">
+                <div class="controlador">
+                    <h1>Listar Tarefas</h1>
+                    <input type="text" v-model="tarefa" placeholder="Tarefas...">
+                    <button v-on:click="adicionarTarefa()" id="add">Adicionar</button>
+
+
+                    <table id="tabela">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <td>Tarefas</td>
+                                <td>Ações</td>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr v-for="(item, index) in tarefas">
+                                <td>
+                                    {{ index }} {{ item }}
+                                </td>
+
+                                <td class="text">
+                                    <button class="at" v-on:click="actualizar()">Actualizar</button>
+                                    <button class="ft" v-on:click="actualizar()">Feito</button>
+                                    <button class="ap" v-on:click="actualizar()">Apagar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </section>
+
+
+
+    </main>
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

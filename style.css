@@ -1,0 +1,60 @@
+.header {
+    background: cyan;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.controlador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 38%;
+    height: 45px;
+    border: 1px solid;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+#add {
+    width: 10%;
+    height: 35px;
+    background: green;
+    border-radius: 30px;
+}
+
+#tabela {
+    text-align: center;
+    padding-top: 100px;
+    border-bottom: 1px solid;
+    margin: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.at {
+    background: #17a2b8;
+    border-radius: 80px;
+    margin: 5px;
+}
+
+.ft {
+    background: #ffc107;
+    border-radius: 80px;
+    margin: 5px;
+}
+
+.ap {
+    background: #dc3545;
+    border-radius: 80px;
+    margin: 5px;
+}
